@@ -1,0 +1,24 @@
+.custom-heading-margin {
+    margin: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+body{
+    background-color: #adcbea;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+img{
+    width: 50%;
+    height: 15vh;
+}
+
+.card{
+    text-align: center;
+}
+.modal-body {
+    text-align: center;
+}
