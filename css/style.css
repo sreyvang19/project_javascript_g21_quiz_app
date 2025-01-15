@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #adcbea;
+    background-color: lightblue;
     display: flex;
     flex-direction: column;
     
@@ -21,4 +21,62 @@ img{
 }
 .modal-body {
     text-align: center;
+}
+
+
+.container {
+    margin-top: 100px;
+}
+
+.quiz-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.quiz-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+.start-screen {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.setting {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.time-info {
+  color: #888;
+  font-size: 0.8rem;
+  margin-top: 5px;
 }
