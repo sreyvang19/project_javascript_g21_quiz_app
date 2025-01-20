@@ -185,7 +185,11 @@
     });
   }
 
-  
+  function showScore() {
+    document.querySelector('.question-container').style.display = 'none';
+    document.querySelector('.score-container').style.display = 'block';
+    document.getElementById('score').innerText = `${score} / ${questions.length}`;
+  }
   </script>
 </body>
 </html>
