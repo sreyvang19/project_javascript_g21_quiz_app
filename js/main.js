@@ -36,3 +36,5 @@ function redirectToCategoryPage(category) {
         console.error(`Category ${category} is not supported`);
     }
 }
+
+
