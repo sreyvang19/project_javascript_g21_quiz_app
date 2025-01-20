@@ -190,6 +190,19 @@
     document.querySelector('.score-container').style.display = 'block';
     document.getElementById('score').innerText = `${score} / ${questions.length}`;
   }
+
+  function resetQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    document.querySelector('.score-container').style.display = 'none';
+    document.querySelector('.start-screen').style.display = 'block';
+
+    // Reset the progress bar
+    const progressBar = document.querySelector('.progress-bar');
+    progressBar.style.width = '0%';
+    progressBar.setAttribute('aria-valuenow', 0);
+    progressBar.innerText = '0/' + questions.length;
+  }
   </script>
 </body>
 </html>
