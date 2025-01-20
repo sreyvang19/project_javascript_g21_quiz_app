@@ -80,3 +80,13 @@ select {
   font-size: 0.8rem;
   margin-top: 5px;
 }
+
+
+.correct {
+  background-color: #8cd69e; /* Green background for correct answer */
+  color: #155724; /* Green text for correct answer */
+}
+.incorrect {
+  background-color: #e3aaae; /* Red background for incorrect answer */
+  color: #721c24; /* Red text for incorrect answer */
+}
