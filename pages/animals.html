@@ -141,6 +141,51 @@
       }
     }, 1000);
   }
+
+  function checkAnswer() {
+    const selectedOption = document.querySelector('input[name="answer"]:checked');
+    if (selectedOption) {
+      const selectedAnswer = selectedOption.value;
+      const correctAnswer = questions[currentQuestionIndex].answer;
+      const options = document.querySelectorAll('.form-check-input');
+
+      options.forEach(option => {
+        const parent = option.parentElement;
+        if (option.value === correctAnswer) {
+          parent.classList.add('correct');
+          if (option.checked) score++;
+        } else if (option.checked) {
+          parent.classList.add('incorrect');
+        }
+        option.disabled = true; // Disable all options after selection
+      });
+
+      currentQuestionIndex++;
+
+      setTimeout(() => {
+        if (currentQuestionIndex < questions.length) {
+          loadNextQuestion();
+        } else {
+          showScore();
+        }
+      }, 2000);
+    } else {
+      alert("Please select an answer.");
+    }
+  }
+
+  function markIncorrect() {
+    const options = document.querySelectorAll('.form-check-input');
+    options.forEach(option => {
+      const parent = option.parentElement;
+      if (option.checked) {
+        parent.classList.add('incorrect');
+      }
+      option.disabled = true; // Disable all options after selection
+    });
+  }
+
+  
   </script>
 </body>
 </html>
