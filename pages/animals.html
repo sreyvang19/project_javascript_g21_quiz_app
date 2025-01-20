@@ -115,6 +115,31 @@
     progressBar.setAttribute('aria-valuenow', currentQuestionIndex + 1);
     progressBar.innerText = (currentQuestionIndex + 1) + '/' + questions.length;
 
+    startTimer(); 
+  }
+
+  function startTimer() {
+    const timeSelect = document.getElementById('time');
+    let timeRemaining = parseInt(timeSelect.value);
+    document.getElementById('submit-answer').innerText = `Submit Answer (${timeRemaining}s)`;
+
+    timerInterval = setInterval(() => {
+      timeRemaining--;
+      document.getElementById('submit-answer').innerText = `Submit Answer (${timeRemaining}s)`;
+
+      if (timeRemaining <= 0) {
+        clearInterval(timerInterval);
+        markIncorrect();
+        currentQuestionIndex++;
+        setTimeout(() => {
+          if (currentQuestionIndex < questions.length) {
+            loadNextQuestion();
+          } else {
+            showScore();
+          }
+        }, 2000);
+      }
+    }, 1000);
   }
   </script>
 </body>
