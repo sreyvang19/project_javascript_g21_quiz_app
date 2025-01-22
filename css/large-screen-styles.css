@@ -1,0 +1,39 @@
+body {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-window, .start-screen, .quiz, .end-screen, .category-window {
+  padding: 20px;
+}
+.welcome-content, .settings, .question-wrapper, .answer-wrapper, .score, .category-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.profile-info {
+  font-size: 1.2em;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  margin-top: 40px;
+}

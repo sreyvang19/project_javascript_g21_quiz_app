@@ -1,0 +1,38 @@
+
+.btn.modern-btn {
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.heading {
+  color: #007bff;
+}
+
+.setting label {
+  color: #555;
+}
+
+.setting select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.warning-message {
+  color: #d9534f;
+}
+
+.timer .progress-bar {
+  background-color: #007bff;
+}
+
+.timer .progress-text {
+  color: #333;
+}
+
+.answer-wrapper .answer.selected {
+  background-color: #007bff;
+  color: #fff;
+}
