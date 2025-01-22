@@ -1,0 +1,8 @@
+/* Responsive styles */
+@media (max-width: 468px) {
+  .container {
+    min-height: 100vh;
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
