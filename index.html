@@ -1,143 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta tags for character set, compatibility, and viewport settings -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Font Awesome for icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    
-    <!-- Stylesheets for the app -->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/modern-styles.css" />
-    <link rel="stylesheet" href="./css/large-screen-styles.css" media="screen and (min-width: 1200px)" />
-    <link rel="stylesheet" href="./css/responsive.css">
-    
-    <!-- JavaScript files -->
-    <script defer type="module" src="./js/script.js"></script>
-    <script defer src="./js/start-quiz.js"></script>
-    
-    <!-- Favicon for the app -->
-    <link rel="icon" href="https://t4.ftcdn.net/jpg/00/64/19/71/240_F_64197195_bGtFNqSvL6wuSN3ppKNLmk3gi8Ba9Gwa.jpg">
-    <title>G21 - Quiz App</title>
-  </head>
-  <body>
-    <!-- Welcome window section -->
-    <div class="welcome-window modern-container">
-      <div class="welcome-content">
-        <img src="https://t4.ftcdn.net/jpg/00/64/19/71/240_F_64197195_bGtFNqSvL6wuSN3ppKNLmk3gi8Ba9Gwa.jpg" alt="Welcome Image" class="welcome-image small-image" />
-        <h1>Welcome to the Quiz App!</h1>
-        <p>Get ready to test your knowledge and have fun.</p>
-        <button class="btn modern-btn get-started">Get Started</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="icon" href="https://www.gstatic.com/images/branding/product/2x/forms_2020q4_48dp.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- The page welcome -->
+  <div id="welcome-modal" class="modal">
+    <div class="modal-content">
+      <img src="https://www.gstatic.com/images/branding/product/2x/forms_2020q4_48dp.png" alt="">
+      <h2>Welcome to the Quiz App</h2>
+      <p>Get ready to test your knowledge!</p>
+      <button id="start-quiz-btn">Start Quiz</button>
+    </div>
+  </div>
+<!-- choose the category -->
+  <div id="welcome-page" class="welcome-page" style="display: none;">
+    <div class="quiz-container">
+      <h1>Choose Categories</h1>
+      <div class="category-container">
+        <div class="card">
+          <h3>General Knowledge</h3>
+          <p>Test your general knowledge with these questions.</p>
+          <button class="play-btn" data-category="General Knowledge">Play</button>
+        </div>
+        <div class="card">
+          <h3>Science</h3>
+          <p>Test your science knowledge with these questions.</p>
+          <button class="play-btn" data-category="Science">Play</button>
+        </div>
+        <div class="card">
+          <h3>Math</h3>
+          <p>Test your math knowledge with these questions.</p>
+          <button class="play-btn" data-category="Math">Play</button>
+        </div>
+        <div class="card">
+          <h3>HTML</h3>
+          <p>Test your HTML knowledge with these questions.</p>
+          <button class="play-btn" data-category="HTML">Play</button>
+        </div>
+        <div class="card">
+          <h3>CSS</h3>
+          <p>Test your CSS knowledge with these questions.</p>
+          <button class="play-btn" data-category="CSS">Play</button>
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>Test your JavaScript knowledge with these questions.</p>
+          <button class="play-btn" data-category="JavaScript">Play</button>
+        </div>
+        <div class="card">
+          <h3>PHP</h3>
+          <p>Test your PHP knowledge with these questions.</p>
+          <button class="play-btn" data-category="PHP">Play</button>
+        </div>
+        <div class="card">
+          <h3>English</h3>
+          <p>Test your English knowledge with these questions.</p>
+          <button class="play-btn" data-category="English">Play</button>
+        </div>
       </div>
     </div>
-    <!-- Main container for the quiz app -->
-    <div class="container modern-container">
-      <!-- Start screen section -->
-      <div class="start-screen">
-        <h1 class="heading modern-heading">Quiz App</h1>
-        <div class="settings">
-          <div class="setting">
-            <label for="num-questions">Number of Questions:</label>
-            <select id="num-questions">
-              <option value="5">5</option>
-              <option value="10">10</option>
-              <option value="15">15</option>
-              <option value="20">20</option>
-              <option value="30">30</option>
-              <option value="40">40</option>
-              <option value="50">50</option>
-            </select>
-          </div>
-          <div class="setting">
-            <label for="category">Select Category:</label>
-            <select id="category">
-              <option value="">Any Category</option>
-              <option value="9">General Knowledge</option>
-              <option value="10">Books</option>
-              <option value="11">Films</option>
-              <option value="12">Music</option>
-              <option value="18">Computers</option>
-              <option value="19">Mathematics</option>
-              <option value="21">Sports</option>
-              <option value="22">Geography</option>
-              <option value="23">History</option>
-            </select>
-          </div>
-          <div class="setting">
-            <label for="difficulty">Select Difficulty:</label>
-            <select id="difficulty">
-              <option value="">Any Difficulty</option>
-              <option value="easy">Easy</option>
-              <option value="medium">Medium</option>
-              <option value="hard">Hard</option>
-            </select>
-          </div>
-          <div class="setting">
-            <label for="time">Select Time Per Question:</label>
-            <select id="time">
-              <option value="10">10 seconds</option>
-              <option value="15">15 seconds</option>
-              <option value="20">20 seconds</option>
-              <option value="25">25 seconds</option>
-              <option value="30">30 seconds</option>
-              <option value="60">60 seconds</option>
-            </select>
-            
-            <div class="time-info"></div>
-          </div>
-        </div>
-        <div class="warning-message modern-warning">Please select both category and difficulty to start the quiz.</div>
-        <button class="btn modern-btn start" disabled>Start Quiz</button>
-      </div>
-      <!-- Quiz section -->
-      <div class="quiz hide">
-        <div class="timer modern-timer">
-          <div class="progress">
-            <div class="progress-bar"></div>
-            <span class="progress-text"></span>
-          </div>
-        </div>
-        <div class="question-wrapper modern-question-wrapper">
-          <div class="number">
-            Question <span class="current">1</span>
-            <span class="total">/10</span>
-          </div>
-          <div class="question">This is a question This is a question?</div>
-        </div>
-        <div class="answer-wrapper modern-answer-wrapper">
-          <div class="answer selected">
-            <span class="text">answer</span>
-            <span class="checkbox">
-              <i class="fas fa-check"></i>
-            </span>
-          </div>
-        </div>
-        <div class="button-wrapper modern-button-wrapper" style="text-align: left; display: flex; gap: 10px;">
-          <button class="btn modern-btn submit" style="font-weight: bold;">Submit</button>
-          <button class="btn modern-btn next" style="font-weight: bold;">Next</button>
-        </div>
-      </div>
-      <!-- End screen section -->
-      <div class="end-screen hide">
-        <h1 class="heading modern-heading">Quiz App</h1>
-        <div class="score modern-score">
-          <span class="score-text">Your score:</span>
-          <div>
-            <span class="final-score">0</span>
-            <span class="total-score">/10</span>
-          </div>
-        </div>
-        <button class="btn modern-btn restart">Restart</button>
-      </div>
+  </div>
+<!-- Option for choose the answer -->
+  <div id="quiz-page" class="quiz-container" style="display: none;">
+    <div class="quiz-header">
+      <h2 id="question">Question text</h2>
+      <ul class="options">
+        <li><button class="option">Option 1</button></li>
+        <li><button class="option">Option 2</button></li>
+        <li><button class="option">Option 3</button></li>
+        <li><button class="option">Option 4</button></li>
+      </ul>
     </div>
-  </body>
+    <!-- tolal score page -->
+    <div id="score-container" class="score-card" style="display: none;">
+      <h2>Your Score: <span id="score"></span>/10</h2>
+      <p>Thank you for participating in the quiz!</p>
+      <button onclick="location.reload()">Start Again</button>
+    </div>
+  </div>
+  <!-- link firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js"></script>
+
+  <script type="module" src="js/script.js"></script>
+</body>
 </html>
