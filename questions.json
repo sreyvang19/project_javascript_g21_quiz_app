@@ -1,0 +1,419 @@
+{
+    "General Knowledge": [
+      {
+        "question": "What is the capital of France?",
+        "options": ["Berlin", "Madrid", "Paris", "Rome"],
+        "correct": 2
+      },
+      {
+        "question": "Who painted the Mona Lisa?",
+        "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
+        "correct": 2
+      },
+      {
+        "question": "What is the largest ocean on Earth?",
+        "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+        "correct": 3
+      },
+      {
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["Earth", "Mars", "Jupiter", "Venus"],
+        "correct": 1
+      },
+      {
+        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "options": ["Harper Lee", "Mark Twain", "Ernest Hemingway", "F. Scott Fitzgerald"],
+        "correct": 0
+      },
+      {
+        "question": "What is the smallest country in the world?",
+        "options": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+        "correct": 1
+      },
+      {
+        "question": "What is the hardest natural substance on Earth?",
+        "options": ["Gold", "Iron", "Diamond", "Platinum"],
+        "correct": 2
+      },
+      {
+        "question": "Who discovered penicillin?",
+        "options": ["Marie Curie", "Alexander Fleming", "Isaac Newton", "Albert Einstein"],
+        "correct": 1
+      },
+      {
+        "question": "What is the tallest mountain in the world?",
+        "options": ["K2", "Kangchenjunga", "Mount Everest", "Lhotse"],
+        "correct": 2
+      },
+      {
+        "question": "Who invented the telephone?",
+        "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Guglielmo Marconi"],
+        "correct": 0
+      }
+    ],
+    "Science": [
+      {
+        "question": "What is the boiling point of water?",
+        "options": ["90°C", "100°C", "120°C", "80°C"],
+        "correct": 1
+      },
+      {
+        "question": "What planet is known as the Red Planet?",
+        "options": ["Earth", "Mars", "Jupiter", "Venus"],
+        "correct": 1
+      },
+      {
+        "question": "What is the chemical symbol for water?",
+        "options": ["H2O", "O2", "CO2", "H2"],
+        "correct": 0
+      },
+      {
+        "question": "What gas do plants absorb from the atmosphere?",
+        "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+        "correct": 2
+      },
+      {
+        "question": "What is the speed of light?",
+        "options": ["300,000 km/s", "150,000 km/s", "450,000 km/s", "600,000 km/s"],
+        "correct": 0
+      },
+      {
+        "question": "What is the center of an atom called?",
+        "options": ["Electron", "Proton", "Neutron", "Nucleus"],
+        "correct": 3
+      },
+      {
+        "question": "What is the most abundant gas in the Earth's atmosphere?",
+        "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+        "correct": 1
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "options": ["Au", "Ag", "Pb", "Fe"],
+        "correct": 0
+      },
+      {
+        "question": "What is the chemical symbol for sodium?",
+        "options": ["Na", "S", "N", "So"],
+        "correct": 0
+      },
+      {
+        "question": "What is the powerhouse of the cell?",
+        "options": ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
+        "correct": 2
+      }
+    ],
+    "Math": [
+      {
+        "question": "What is 5 + 3?",
+        "options": ["5", "8", "12", "15"],
+        "correct": 1
+      },
+      {
+        "question": "What is the square root of 16?",
+        "options": ["2", "4", "8", "16"],
+        "correct": 1
+      },
+      {
+        "question": "What is 10 / 2?",
+        "options": ["2", "5", "10", "20"],
+        "correct": 1
+      },
+      {
+        "question": "What is 7 * 6?",
+        "options": ["42", "36", "48", "54"],
+        "correct": 0
+      },
+      {
+        "question": "What is 9 - 4?",
+        "options": ["3", "5", "7", "9"],
+        "correct": 1
+      },
+      {
+        "question": "What is 12 + 8?",
+        "options": ["18", "20", "22", "24"],
+        "correct": 1
+      },
+      {
+        "question": "What is 15 % 4?",
+        "options": ["1", "2", "3", "4"],
+        "correct": 2
+      },
+      {
+        "question": "What is 3^3?",
+        "options": ["6", "9", "27", "81"],
+        "correct": 2
+      },
+      {
+        "question": "What is the value of Pi (π) to two decimal places?",
+        "options": ["3.12", "3.14", "3.16", "3.18"],
+        "correct": 1
+      },
+      {
+        "question": "What is the sum of the angles in a triangle?",
+        "options": ["180 degrees", "360 degrees", "90 degrees", "270 degrees"],
+        "correct": 0
+      }
+    ],
+    "HTML": [
+      {
+        "question": "What does HTML stand for?",
+        "options": ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyperlinking Text Marking Language"],
+        "correct": 0
+      },
+      {
+        "question": "Which HTML tag is used to define an internal style sheet?",
+        "options": ["<style>", "<script>", "<css>", "<link>"],
+        "correct": 0
+      },
+      {
+        "question": "Which HTML tag is used to define a hyperlink?",
+        "options": ["<a>", "<link>", "<href>", "<hyperlink>"],
+        "correct": 0
+      },
+      {
+        "question": "Which HTML tag is used to define an image?",
+        "options": ["<img>", "<image>", "<pic>", "<picture>"],
+        "correct": 0
+      },
+      {
+        "question": "Which HTML tag is used to define a table?",
+        "options": ["<table>", "<tab>", "<tr>", "<td>"],
+        "correct": 0
+      },
+      {
+        "question": "Which HTML tag is used to define a list item?",
+        "options": ["<li>", "<ul>", "<ol>", "<item>"],
+        "correct": 0
+      },
+      {
+        "question": "Which HTML tag is used to define a paragraph?",
+        "options": ["<p>", "<para>", "<paragraph>", "<text>"],
+        "correct": 0
+      },
+      {
+        "question": "Which HTML tag is used to define a header?",
+        "options": ["<h1>", "<header>", "<head>", "<h>"],
+        "correct": 0
+      },
+      {
+        "question": "Which HTML tag is used to define a division or a section?",
+        "options": ["<div>", "<section>", "<span>", "<article>"],
+        "correct": 0
+      },
+      {
+        "question": "Which HTML attribute is used to define inline styles?",
+        "options": ["class", "style", "font", "styles"],
+        "correct": 1
+      }
+    ],
+    "CSS": [
+      {
+        "question": "What does CSS stand for?",
+        "options": ["Cascading Style Sheets", "Colorful Style Sheets", "Creative Style Sheets", "Computer Style Sheets"],
+        "correct": 0
+      },
+      {
+        "question": "Which property is used to change the background color?",
+        "options": ["color", "background-color", "bgcolor", "background"],
+        "correct": 1
+      },
+      {
+        "question": "Which property is used to change the text color?",
+        "options": ["color", "text-color", "font-color", "text"],
+        "correct": 0
+      },
+      {
+        "question": "Which property is used to change the font size?",
+        "options": ["font-size", "text-size", "font", "size"],
+        "correct": 0
+      },
+      {
+        "question": "Which property is used to change the text alignment?",
+        "options": ["text-align", "align", "text", "alignment"],
+        "correct": 0
+      },
+      {
+        "question": "Which property is used to change the margin?",
+        "options": ["margin", "padding", "border", "spacing"],
+        "correct": 0
+      },
+      {
+        "question": "Which property is used to change the padding?",
+        "options": ["padding", "margin", "border", "spacing"],
+        "correct": 0
+      },
+      {
+        "question": "Which property is used to change the border?",
+        "options": ["border", "margin", "padding", "outline"],
+        "correct": 0
+      },
+      {
+        "question": "Which CSS property controls the text size?",
+        "options": ["font-style", "text-size", "font-size", "text-style"],
+        "correct": 2
+      },
+      {
+        "question": "Which CSS property is used to change the font?",
+        "options": ["font-family", "font-style", "font-weight", "font-size"],
+        "correct": 0
+      }
+    ],
+    "JavaScript": [
+      {
+        "question": "What is the correct syntax for referring to an external script called 'script.js'?",
+        "options": ["<script href='script.js'>", "<script name='script.js'>", "<script src='script.js'>", "<script file='script.js'>"],
+        "correct": 2
+      },
+      {
+        "question": "How do you write 'Hello World' in an alert box?",
+        "options": ["msgBox('Hello World');", "alertBox('Hello World');", "msg('Hello World');", "alert('Hello World');"],
+        "correct": 3
+      },
+      {
+        "question": "How do you create a function in JavaScript?",
+        "options": ["function myFunction()", "function:myFunction()", "function = myFunction()", "function => myFunction()"],
+        "correct": 0
+      },
+      {
+        "question": "How do you call a function named 'myFunction'?",
+        "options": ["call myFunction()", "call function myFunction()", "myFunction()", "function myFunction()"],
+        "correct": 2
+      },
+      {
+        "question": "How do you write an IF statement in JavaScript?",
+        "options": ["if i == 5 then", "if (i == 5)", "if i = 5 then", "if i = 5"],
+        "correct": 1
+      },
+      {
+        "question": "How do you write a FOR loop in JavaScript?",
+        "options": ["for (i = 0; i <= 5)", "for (i <= 5; i++)", "for i = 1 to 5", "for (i = 0; i <= 5; i++)"],
+        "correct": 3
+      },
+      {
+        "question": "How do you add a comment in JavaScript?",
+        "options": ["<!-- This is a comment -->", "// This is a comment", "' This is a comment", "/* This is a comment */"],
+        "correct": 1
+      },
+      {
+        "question": "How do you declare a JavaScript variable?",
+        "options": ["var carName;", "variable carName;", "v carName;", "var: carName;"],
+        "correct": 0
+      },
+      {
+        "question": "How do you round the number 7.25 to the nearest integer?",
+        "options": ["Math.rnd(7.25)", "Math.round(7.25)", "round(7.25)", "rnd(7.25)"],
+        "correct": 1
+      },
+      {
+        "question": "How do you find the number with the highest value of x and y?",
+        "options": ["Math.ceil(x, y)", "Math.max(x, y)", "ceil(x, y)", "top(x, y)"],
+        "correct": 1
+      }
+    ],
+    "PHP": [
+      {
+        "question": "What does PHP stand for?",
+        "options": ["Personal Home Page", "Private Home Page", "PHP: Hypertext Preprocessor", "Preprocessor Home Page"],
+        "correct": 2
+      },
+      {
+        "question": "Which symbol is used to declare a variable in PHP?",
+        "options": ["$", "#", "@", "&"],
+        "correct": 0
+      },
+      {
+        "question": "Which function is used to output text in PHP?",
+        "options": ["echo", "print", "write", "output"],
+        "correct": 0
+      },
+      {
+        "question": "Which function is used to include a file in PHP?",
+        "options": ["include()", "require()", "import()", "load()"],
+        "correct": 0
+      },
+      {
+        "question": "Which function is used to start a session in PHP?",
+        "options": ["session_start()", "session_begin()", "session_init()", "session_open()"],
+        "correct": 0
+      },
+      {
+        "question": "Which function is used to connect to a MySQL database in PHP?",
+        "options": ["mysql_connect()", "mysqli_connect()", "db_connect()", "connect()"],
+        "correct": 1
+      },
+      {
+        "question": "Which function is used to get the length of a string in PHP?",
+        "options": ["strlen()", "length()", "size()", "strlength()"],
+        "correct": 0
+      },
+      {
+        "question": "Which function is used to get the current date and time in PHP?",
+        "options": ["date()", "time()", "now()", "current()"],
+        "correct": 0
+      },
+      {
+        "question": "Which function is used to get the type of a variable in PHP?",
+        "options": ["gettype()", "typeof()", "var_type()", "type()"],
+        "correct": 0
+      },
+      {
+        "question": "Which function is used to convert a string to an array in PHP?",
+        "options": ["explode()", "split()", "str_split()", "array_split()"],
+        "correct": 0
+      }
+    ],
+    "English": [
+      {
+        "question": "What is the synonym of 'happy'?",
+        "options": ["Sad", "Joyful", "Angry", "Tired"],
+        "correct": 1
+      },
+      {
+        "question": "What is the antonym of 'difficult'?",
+        "options": ["Easy", "Hard", "Complicated", "Tough"],
+        "correct": 0
+      },
+      {
+        "question": "Which word is a noun?",
+        "options": ["Run", "Beautiful", "Happiness", "Quickly"],
+        "correct": 2
+      },
+      {
+        "question": "What is the past tense of 'go'?",
+        "options": ["Gone", "Went", "Going", "Goes"],
+        "correct": 1
+      },
+      {
+        "question": "Which sentence is correct?",
+        "options": ["She go to school.", "She goes to school.", "She going to school.", "She gone to school."],
+        "correct": 1
+      },
+      {
+        "question": "What is the plural form of 'child'?",
+        "options": ["Childs", "Children", "Childes", "Childrens"],
+        "correct": 1
+      },
+      {
+        "question": "Which word is an adjective?",
+        "options": ["Quickly", "Run", "Beautiful", "Happiness"],
+        "correct": 2
+      },
+      {
+        "question": "What is the superlative form of 'good'?",
+        "options": ["Gooder", "Better", "Best", "Goodest"],
+        "correct": 2
+      },
+      {
+        "question": "Which word is a verb?",
+        "options": ["Run", "Beautiful", "Happiness", "Quickly"],
+        "correct": 0
+      },
+      {
+        "question": "What is the past tense of 'eat'?",
+        "options": ["Eated", "Ate", "Eating", "Eats"],
+        "correct": 1
+      }
+    ]
+  }
+  
