@@ -95,3 +95,84 @@ function startTimer(duration, callback) {
   }, 1000);
 }
 
+// Update question count display
+function updateQuestionCount() {
+  questionCountEl.textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
+}
+
+// Load a question and its options
+function loadQuestion() {
+  const current = questions[currentQuestion];
+  questionEl.textContent = current.question;
+  const labels = ['A', 'B', 'C', 'D'];
+  optionsEl.forEach((option, index) => {
+    option.textContent = `${labels[index]}. ${current.options[index]}`;
+    option.onclick = () => checkAnswer(index);
+  });
+  resetOptions();
+  startTimer(15, () => { 
+    checkAnswer(-1); // Time's up, no answer selected
+  });
+  updateQuestionCount();
+}
+
+// Check the selected answer
+function checkAnswer(selectedIndex) {
+  clearInterval(timer);
+  const correctIndex = questions[currentQuestion].correct;
+  if (selectedIndex === correctIndex) {
+    score++;
+    optionsEl[selectedIndex].style.backgroundColor = "#4CAF50";
+  } else {
+    if (selectedIndex !== -1) {
+      optionsEl[selectedIndex].style.backgroundColor = "#f44336";
+    }
+    optionsEl[correctIndex].style.backgroundColor = "#4CAF50";
+  }
+  disableOptions();
+  setTimeout(() => {
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+      resetOptions();
+      loadQuestion();
+    } else {
+      showScore();
+    }
+  }, 1000); // Wait 1 second before loading the next question
+}
+
+// Disable options after an answer is selected
+function disableOptions() {
+  optionsEl.forEach((option) => {
+    option.onclick = null;
+  });
+}
+
+// Reset options for the next question
+function resetOptions() {
+  optionsEl.forEach((option) => {
+    option.style.backgroundColor = "";
+  });
+}
+
+// Show the final score and store it in localStorage and Firebase
+function showScore() {
+  scoreContainer.style.display = "block";
+  scoreEl.textContent = score;
+  document.querySelector(".quiz-header").style.display = "none";
+  localStorage.setItem('quizScore', score); // Store the score in localStorage
+  saveScoreToFirebase(selectedCategory, score); // Save score to Firebase
+}
+
+// Save score to Firebase
+function saveScoreToFirebase(category, score) {
+  const scoresRef = ref(database, 'scores');
+  const newScoreRef = push(scoresRef);
+  set(newScoreRef, {
+    category: category,
+    score: score,
+    timestamp: new Date().toISOString(),
+  })
+    .then(() => console.log("Score saved successfully!"))
+    .catch((error) => console.error("Error saving score:", error));
+}
