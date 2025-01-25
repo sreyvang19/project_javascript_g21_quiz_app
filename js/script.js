@@ -13,7 +13,6 @@ const firebaseConfig = {
   appId: "1:422744983984:web:3b98e45f37a18b3f73ae75"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
@@ -48,11 +47,6 @@ document.querySelector('.quiz-header').insertBefore(questionCountEl, questionEl)
 window.onload = () => {
   welcomeModal.style.display = "block";
   welcomePage.style.display = "none";
-  const storedScore = localStorage.getItem('quizScore');
-  if (storedScore !== null) {
-    scoreEl.textContent = storedScore;
-    scoreContainer.style.display = "block";
-  }
 };
 
 // Start quiz button click event
@@ -160,9 +154,11 @@ function showScore() {
   scoreContainer.style.display = "block";
   scoreEl.textContent = score;
   document.querySelector(".quiz-header").style.display = "none";
-  localStorage.setItem('quizScore', score); // Store the score in localStorage
   saveScoreToFirebase(selectedCategory, score); // Save score to Firebase
 }
+
+
+
 
 // Save score to Firebase
 function saveScoreToFirebase(category, score) {
