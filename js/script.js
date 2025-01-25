@@ -48,11 +48,6 @@ document.querySelector('.quiz-header').insertBefore(questionCountEl, questionEl)
 window.onload = () => {
   welcomeModal.style.display = "block";
   welcomePage.style.display = "none";
-  const storedScore = localStorage.getItem('quizScore');
-  if (storedScore !== null) {
-    scoreEl.textContent = storedScore;
-    scoreContainer.style.display = "block";
-  }
 };
 
 // Start quiz button click event
@@ -160,7 +155,7 @@ function showScore() {
   scoreContainer.style.display = "block";
   scoreEl.textContent = score;
   document.querySelector(".quiz-header").style.display = "none";
-  localStorage.setItem('quizScore', score); // Store the score in localStorage
+  // localStorage.setItem('quizScore', score);
   saveScoreToFirebase(selectedCategory, score); // Save score to Firebase
 }
 
