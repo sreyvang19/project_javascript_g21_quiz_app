@@ -13,7 +13,6 @@ const firebaseConfig = {
   appId: "1:422744983984:web:3b98e45f37a18b3f73ae75"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
@@ -155,9 +154,11 @@ function showScore() {
   scoreContainer.style.display = "block";
   scoreEl.textContent = score;
   document.querySelector(".quiz-header").style.display = "none";
-  // localStorage.setItem('quizScore', score);
   saveScoreToFirebase(selectedCategory, score); // Save score to Firebase
 }
+
+
+
 
 // Save score to Firebase
 function saveScoreToFirebase(category, score) {
